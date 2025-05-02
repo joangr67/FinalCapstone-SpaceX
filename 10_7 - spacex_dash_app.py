@@ -28,7 +28,8 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                                     searchable=True
                                             ),
                                 html.Br(),
-
+# TASK 2:
+# Add a callback function for `site-dropdown` as input, `success-pie-chart` as output
                                 html.Div(dcc.Graph(id='success-pie-chart')),
                                 html.Br(),
 
@@ -83,8 +84,7 @@ def get_pie_chart(entered_site):
     return fig
 
 
-# TASK 2:
-# Add a callback function for `site-dropdown` as input, `success-pie-chart` as output
+
 
 # TASK 4:
 # Add a callback function for `site-dropdown` and `payload-slider` as inputs, `success-payload-scatter-chart` as output
